@@ -417,6 +417,60 @@ header {
 
 .idea-bank-link { margin-top: 32px; font-size: 13px; color: #fff; }
 
+/* ── Quotes ── */
+.quotes-section { padding: 80px 0; }
+
+.quotes-heading {
+  font-family: '72Black', '72', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.quotes-subheading {
+  font-size: 15px;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+
+.quotes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.quote-card {
+  margin: 0;
+  padding: 36px 32px;
+  border-radius: 16px;
+  background: #0c0c0c;
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+}
+
+.quote-card::before {
+  content: '\201C';
+  position: absolute;
+  top: 16px;
+  left: 28px;
+  font-family: Georgia, serif;
+  font-size: 72px;
+  line-height: 1;
+  color: var(--pink);
+}
+
+.quote-card p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #fff;
+  padding-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .quotes-grid { grid-template-columns: 1fr; }
+}
+
 /* ── Focus section redesign ── */
 .focus-section { padding: 80px 0 48px; }
 
@@ -1024,6 +1078,27 @@ footer {
     </div>
     <div class="idea-bank-link">
       <span>See all idea submissions in the <a href="https://app.mural.co/t/sapdigitalmarketing5321/m/sapdigitalmarketing5321/1791399888488/0fa5b89f629ee333c7794de4bf776b8efa979ae3?wid=0-1791401786450" class="proto-link" target="_blank" rel="noopener noreferrer">Idea Bank</a></span>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── Quotes ───────────────────────────────────────────────────── -->
+<section class="quotes-section">
+  <div class="container">
+    <h2 class="quotes-heading">In Their Words</h2>
+    <p class="quotes-subheading">What our participants had to say about Pixel & Pitch</p>
+    <div class="quotes-grid">
+      <blockquote class="quote-card">
+        <p>"I loved connecting with people across SAP that I likely would not otherwise have had the opportunity to work with and collaborating so closely with people who brought different expertise and perspectives to the table."</p>
+      </blockquote>
+      <blockquote class="quote-card">
+        <p>"I really had fun and I feel inspired about my regular work this week."</p>
+      </blockquote>
+      <blockquote class="quote-card">
+        <p>"I loved seeing uses of AI that were different from what I encounter in my day-to-day work. It gave me a chance to look at problem spaces through perspectives I do not usually have access to and stretched how I think about what AI can enable."</p>
+      </blockquote>
     </div>
   </div>
 </section>
